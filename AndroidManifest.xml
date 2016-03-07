@@ -10,7 +10,7 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+	
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -89,35 +89,43 @@ Preguntas_control
         </activity>
         <activity
             android:name=".Exp7"
-            android:label="@string/title_activity_exp7" >
+            android:label="@string/title_activity_exp7" 
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Exp72"
-            android:label="@string/title_activity_exp72" >
+            android:label="@string/title_activity_exp72"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".Exp73"
-            android:label="@string/title_activity_exp73" >
+            android:label="@string/title_activity_exp73" 
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Preguntas_control2"
-            android:label="preguntas control 2" >
+            android:label="preguntas control 2" 
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".preguntas_control"
-            android:label="preguntas control" >
+            android:label="preguntas control" 
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Preguntas_control3"
-            android:label="preguntas control 3" >
+            android:label="preguntas control 3" 
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".PreguntasAntes"
-            android:label="@string/title_activity_preguntas_antes" >
+            android:label="@string/title_activity_preguntas_antes"
+			android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".PreguntasDespues"
-            android:label="@string/title_activity_preguntas_despues" >
+            android:label="@string/title_activity_preguntas_despues"
+            android:screenOrientation="landscape" >
         </activity>
     </application>
 

@@ -105,7 +105,7 @@ public class Exp7 extends Activity {
 		}
 		
 	}
-	 
+
 	public void esconder(View view){
 		TextView t = (TextView)findViewById(R.id.main_text); 
 		t.setText(" ");

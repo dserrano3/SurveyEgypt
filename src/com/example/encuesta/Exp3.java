@@ -59,7 +59,7 @@ public class Exp3 extends Activity {
 		Log.v("func calcular cont ess=", String.valueOf(cont));
 		Button text_a = (Button) findViewById(R.id.op_a);
 		Button text_b = (Button) findViewById(R.id.op_b);
-		text_a.setText(part1a + "١٠٠" + part2a);
+		text_a.setText(part1a + valor_quieto + part2a);
 		text_b.setText(part1b + vals[cont] + part2b);
 		
 		// Si es la primera vez solo se hace set de los text.

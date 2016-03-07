@@ -194,10 +194,10 @@ public class Gracias extends Activity {
 		    if(user.color.equals("green")){
 		    	int pago = Math.max(Integer.valueOf(user.resExp2.split("\\|")[0]),Integer.valueOf(user.resExp2.split("\\|")[1]));
 		    	Log.v("Respuesta pago 1", String.valueOf(pago));
-		    	if(pago<0){
-		    		pago=65+pago;
-		    		Log.v("Respuesta pago 1", String.valueOf(pago));
-		    	}
+		        
+		    	// Quoting Marcela: 
+		    	// It should subtract negative numbers from 50 and add positive nunbers to 50. 
+		    	pago = 50 + pago;
 		    	Log.v("Respuesta pago 2", user.pago);
 		    	user.pago = String.valueOf(pago);
 		    	t.setText("your payment is " +pago + " EGP");
@@ -206,9 +206,7 @@ public class Gracias extends Activity {
 		    if(user.color.equals("red")){
 		    	int pago = Math.min(Integer.valueOf(user.resExp2.split("\\|")[0]),Integer.valueOf(user.resExp2.split("\\|")[1])); 
 		    	Log.v("Respuesta pago 1", String.valueOf(pago));
-		    	if(pago<0){
-		    		pago=65+pago;
-		    	}
+		    	pago = 50 + pago;
 		    	user.pago = String.valueOf(pago);
 		    	t.setText("your payment is " +pago + " EGP");
 				terminar();

@@ -21,17 +21,6 @@
         android:tag="3" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/imageView1"
-        android:layout_marginRight="23dp"
-        android:onClick="continuar"
-        android:src="@drawable/control32_fig2"
-        android:tag="1" />
-
-    <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,12 +51,23 @@
         android:tag="2" />
 
     <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:onClick="continuar"
+        android:src="@drawable/control32_fig2"
+        android:tag="1" />
+
+    <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
-        android:layout_marginLeft="56dp"
-        android:layout_toRightOf="@+id/imageView1"
+        android:layout_marginLeft="49dp"
+        android:layout_toRightOf="@+id/imageView2"
         android:onClick="continuar"
         android:src="@drawable/control32_fig5"
         android:tag="4" />
@@ -77,8 +77,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView5"
-        android:layout_alignRight="@+id/imageView4"
-        android:layout_marginRight="17dp"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_marginLeft="16dp"
         android:onClick="continuar"
         android:src="@drawable/control32_fig6"
         android:tag="5" />
