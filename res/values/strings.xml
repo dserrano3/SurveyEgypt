@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Encuesta</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_exp1">Exp1</string>
+    <string name="title_activity_exp3">Exp3</string>
+    <string name="title_activity_exp5">Exp5</string>
+    <string name="title_activity_mensaje_exp5">MensajeExp5</string>
+    <string name="title_activity_gracias">Gracias</string>
+    <string name="title_activity_exp7">Exp7</string>
+    <string name="title_activity_exp72">Exp72</string>
+    <string name="title_activity_exp73">Exp73</string>
+    <string name="title_activity_preguntas_antes">PreguntasAntes</string>
+    <string name="title_activity_preguntas_despues">PreguntasDespues</string>
+
+</resources>

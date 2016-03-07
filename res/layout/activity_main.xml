@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.encuesta.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter ID" />
+
+    <EditText
+        android:id="@+id/idMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="28dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+    
+
+    <Button
+        android:id="@+id/mainActivityNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idMainActivity"
+        android:layout_below="@+id/idMainActivity"
+        android:layout_marginTop="49dp"
+        android:onClick="mainActivityAdvance"
+        android:tag="male"
+        android:text="ذكر" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mainActivityNext"
+        android:layout_alignBottom="@+id/mainActivityNext"
+        android:layout_marginLeft="36dp"
+        android:layout_toRightOf="@+id/mainActivityNext"
+        android:onClick="mainActivityAdvance"
+        android:tag="female"
+        android:text="أنثى" />
+
+    <RadioGroup
+        android:id="@+id/radioC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/idMainActivity"
+        android:layout_marginLeft="48dp"
+        android:layout_toRightOf="@+id/button1"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/radioC1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:checked="true"
+            android:text="عازب- عزباء" />
+
+        <RadioButton
+            android:id="@+id/radioC2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioMale"
+            android:layout_alignBottom="@+id/radioMale"
+            android:layout_toLeftOf="@+id/radioFemasle"
+            android:text="متزوج- متزوجة" />
+
+        <RadioButton
+            android:id="@+id/radioC3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioFemale"
+            android:layout_alignBottom="@+id/radioFemale"
+            android:layout_toLeftOf="@+id/radioFfemale"
+            android:text="مطلق- مطلقة" />
+
+        <RadioButton
+            android:id="@+id/radioC4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioFemasle"
+            android:layout_alignBottom="@+id/radioFemasle"
+            android:layout_alignRight="@+id/textView8"
+            android:text="ارمل- ارملة" />
+
+        <RadioButton
+            android:id="@+id/radioC5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="منفصل- منفصلة" />
+    </RadioGroup>
+
+</RelativeLayout>

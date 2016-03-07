@@ -1,0 +1,306 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.encuesta.Exp73" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حنطلب منك أنك تحاول تخمن القرارات ال أخذها شريك في ازاى حتقسموا المبلغ، لوقدرت  
+تحدد الرقم الصح لكل قرار ستكسب ٥ جنيه لكل جواب صح. لو كانت إجابتك تبعد نقطتين عن 
+الإجابة الصح حتكسب ٣ جنيه، لو كانت بتبعد ثلاث نقط ستكسب جنيه واحد" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="21dp"
+        android:text="تعتقد قد اية شريكك عايز يدى_____________________________________________________"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="17dp"
+        android:text="تعتقد قد اية شريكك عايز يتنفذ قراره"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="28dp"
+        android:text="قد اية  بتثق ب المؤسسة"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="نفسه"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="23dp"
+        android:text="الحساب المشترك"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="18dp"
+        android:text="مقارنة بالكمبيوتر"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="15dp"
+        android:text="مقارنةً بقرارك"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioE1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:checked="true"
+            android:text="١" />
+
+        <RadioButton
+            android:id="@+id/radioE2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioMale"
+            android:layout_alignBottom="@+id/radioMale"
+            android:layout_toLeftOf="@+id/radioFemasle"
+            android:text="٢" />
+
+        <RadioButton
+            android:id="@+id/radioE3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioFemale"
+            android:layout_alignBottom="@+id/radioFemale"
+            android:layout_toLeftOf="@+id/radioFfemale"
+            android:text="٣" />
+
+        <RadioButton
+            android:id="@+id/radioE4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioFemasle"
+            android:layout_alignBottom="@+id/radioFemasle"
+            android:layout_alignRight="@+id/textView8"
+            android:text="٤" />
+
+        <RadioButton
+            android:id="@+id/radioE5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioFfemale"
+            android:layout_alignBottom="@+id/radioFfemale"
+            android:layout_toRightOf="@+id/radioFfemale"
+            android:text="٥" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioC"
+        android:layout_alignTop="@+id/textView7"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioD1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:checked="true"
+            android:text="١" />
+
+        <RadioButton
+            android:id="@+id/radioD2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioMale"
+            android:layout_alignBottom="@+id/radioMale"
+            android:layout_toLeftOf="@+id/radioFemasle"
+            android:text="٢" />
+
+        <RadioButton
+            android:id="@+id/radioD3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioFemale"
+            android:layout_alignBottom="@+id/radioFemale"
+            android:layout_toLeftOf="@+id/radioFfemale"
+            android:text="٣" />
+
+        <RadioButton
+            android:id="@+id/radioD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioFemasle"
+            android:layout_alignBottom="@+id/radioFemasle"
+            android:layout_alignRight="@+id/textView8"
+            android:text="٤" />
+
+        <RadioButton
+            android:id="@+id/radioD5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioFfemale"
+            android:layout_alignBottom="@+id/radioFfemale"
+            android:layout_toRightOf="@+id/radioFfemale"
+            android:text="٥" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_toRightOf="@+id/radioE"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioC1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:checked="true"
+            android:text="١" />
+
+        <RadioButton
+            android:id="@+id/radioC2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioMale"
+            android:layout_alignBottom="@+id/radioMale"
+            android:layout_toLeftOf="@+id/radioFemasle"
+            android:text="٢" />
+
+        <RadioButton
+            android:id="@+id/radioC3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioFemale"
+            android:layout_alignBottom="@+id/radioFemale"
+            android:layout_toLeftOf="@+id/radioFfemale"
+            android:text="٣" />
+
+        <RadioButton
+            android:id="@+id/radioC4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioFemasle"
+            android:layout_alignBottom="@+id/radioFemasle"
+            android:layout_alignRight="@+id/textView8"
+            android:text="٤" />
+
+        <RadioButton
+            android:id="@+id/radioC5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="٥" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/textoNumeros1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/textView6"
+        android:ems="10"
+        android:inputType="number" >
+        
+        <requestFocus />
+    </EditText>
+    
+
+    <TextView
+        android:id="@+id/seekText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textoNumeros1"
+        android:layout_marginLeft="37dp"
+        android:layout_toRightOf="@+id/textoNumeros1"
+        android:text="٠/٣٠"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/seekText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/seekText"
+        android:text="٠/٦٠"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/radioD"
+        android:layout_alignTop="@+id/radioE"
+        android:layout_marginRight="20dp"
+        android:onClick="continuar"
+        android:text="Continue" />
+
+    <EditText
+        android:id="@+id/textoNumeros2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignTop="@+id/textView4"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>

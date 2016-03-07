@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="6"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="230dp"
+        android:layout_height="163dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_toLeftOf="@+id/imageView6"
+        android:onClick="continuar"
+        android:scaleType="center"
+        android:src="@drawable/exp1fig3"
+        android:tag="4|91" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="ما الاختيار ال تفضله؟_______________"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="230dp"
+        android:layout_height="163dp"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:onClick="continuar"
+        android:scaleType="center"
+        android:src="@drawable/exp1fig6"
+        android:tag="25|47" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="230dp"
+        android:layout_height="163dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView3"
+        android:onClick="continuar"
+        android:scaleType="center"
+        android:src="@drawable/exp1fig4"
+        android:tag="11|77" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="230dp"
+        android:layout_height="163dp"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginLeft="171dp"
+        android:onClick="continuar"
+        android:scaleType="center"
+        android:src="@drawable/exp1fig5"
+        android:tag="18|62" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="230dp"
+        android:layout_height="163dp"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/imageView5"
+        android:onClick="continuar"
+        android:scaleType="center"
+        android:src="@drawable/exp1fig2"
+        android:tag="0|95" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="230dp"
+        android:layout_height="163dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="194dp"
+        android:layout_marginTop="47dp"
+        android:onClick="continuar"
+        android:scaleType="center"
+        android:src="@drawable/exp1fig1"
+        android:tag="33|33" />
+
+</RelativeLayout>
