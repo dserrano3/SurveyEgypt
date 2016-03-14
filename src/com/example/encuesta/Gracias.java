@@ -18,8 +18,8 @@ import java.lang.Math;
 
 public class Gracias extends Activity {
 	private InfoUser user;
-	String[] vals3  = new String[]{"101","102","103","104","105"};
-	String[] vals4  = new String[]{"106","113","119","127","134"};
+	String[] vals3  = new String[]{"30","33","40","45","50"};
+	String[] vals4  = new String[]{"55","65","80","90","100"};
 	int exp;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +53,7 @@ public class Gracias extends Activity {
 
 		 user.selected = exp;
 		 
-		 if(exp>7 || exp<1){
+		 if(exp>9 || exp<1 || exp == 7){
 			 AlertDialog alertDialog = new AlertDialog.Builder(this).create();
 				alertDialog.setTitle("Alert");
 				alertDialog.setMessage("Experiment not found");
@@ -96,7 +96,7 @@ public class Gracias extends Activity {
 				 }
 			 }
 			 int pos = rnd.nextInt(max + 1);
-			 String msg = "Desition was between 100 in one month or " + vals3[pos] + " in two months.\n" +
+			 String msg = "Desition was between 25 in one month or " + vals3[pos] + " in two months.\n" +
 			               "You chose option " + user.resExp3.charAt(pos) + " earning " + (user.resExp3.charAt(pos) == 'A'?"100":vals3[pos]);
 			 TextView t = (TextView)findViewById(R.id.aux); 
 			 t.setText(msg);
@@ -114,7 +114,7 @@ public class Gracias extends Activity {
 				 }
 			 }
 			 int pos = rnd.nextInt(max+1);
-			 String msg = "Desition was between 100 in one month or " + vals4[pos] + " in seven months.\n" +
+			 String msg = "Desition was between 20 in one month or " + vals4[pos] + " in seven months.\n" +
 			               "You chose option " + user.resExp4.charAt(pos)  + " earning " + (user.resExp4.charAt(pos) == 'A'?"100":vals4[pos]);;
 			 TextView t = (TextView)findViewById(R.id.aux); 
 			 t.setText(msg);
@@ -167,6 +167,44 @@ public class Gracias extends Activity {
 
 			 user.pago = String.valueOf(tot);
 			 msg += "\nYou receive " + user.pago;
+			 TextView t = (TextView)findViewById(R.id.aux); 
+			 t.setText(msg);
+			 terminar();
+		 }
+		 if(exp == 8) {
+			 // Control with images.
+			 
+			 int correct = 0;
+			 if(user.control_3A.equals("1"))
+				 correct ++;
+			 if(user.control_3B.equals("1"))
+				 correct ++;
+			 if(user.control_3C.equals("5"))
+				 correct ++;
+			 
+			 String msg = "Control experiment, 8 selected. You have: " +
+			 String.valueOf(correct) + " correct, \n you earn: " + String.valueOf(15*correct);
+			 
+			 user.pago = String.valueOf(15*correct);
+			 TextView t = (TextView)findViewById(R.id.aux); 
+			 t.setText(msg);
+			 terminar();
+		 } if(exp == 9) {
+			 // Control with images.
+			 Random rnd = ThreadLocalRandom.current();
+			 int pantalla = rnd.nextInt(2);
+			 String msg  = "";
+			 String pago;
+			 if(pantalla == 0) {
+				 pago = String.valueOf(Integer.valueOf(user.control_2A) * 5);
+				 msg = "In the first part you scored: " + user.control_2A + " points" +
+						 " earning " + pago;
+			 }else {
+				 pago = String.valueOf(Integer.valueOf(user.control_2A) * 15);
+				 msg = "In the second part you scored: " + user.control_2B + " points" +
+						 " earning " + pago;
+			 }
+			 user.pago = pago;
 			 TextView t = (TextView)findViewById(R.id.aux); 
 			 t.setText(msg);
 			 terminar();

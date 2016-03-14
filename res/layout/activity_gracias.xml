@@ -68,7 +68,7 @@
         android:layout_toRightOf="@+id/green"
         android:onClick="exp1_2"
         android:tag="red"
-        android:text="أخضر" />
+        android:text="أحمر" />
 
     <Button
         android:id="@+id/button1"
