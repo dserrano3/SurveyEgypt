@@ -71,9 +71,10 @@ public class Exp73 extends Activity {
 	}
 
 	public void continuar(View view) {
-		user.ownEndowment = String.valueOf(seekBar);
-		
-		user.jointEndowment = String.valueOf(seekBar2);
+		//user.ownEndowment = String.valueOf(seekBar);
+		user.ownEndowment = seekBar.getText().toString();
+		//user.jointEndowment = String.valueOf(seekBar2);
+		user.jointEndowment = seekBar2.getText().toString();
 		
 		RadioGroup radio = (RadioGroup) findViewById(R.id.radioC);
 		RadioButton selected = (RadioButton) findViewById(radio.getCheckedRadioButtonId());

@@ -133,7 +133,7 @@ public class Gracias extends Activity {
 				 user.pago = String.valueOf(Integer.valueOf(user.resExp53) * 5);
 			 }
 			 if(user.formaExp5.equals("B")){
-				 int valorOtro = valorOtro(2);
+				 int valorOtro = valorOtro(3);
 				 int pago = 0;
 				 if(Integer.valueOf(user.resExp53) > valorOtro) {
 					 //cambiado
